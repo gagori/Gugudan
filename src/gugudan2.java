@@ -9,14 +9,23 @@ public class gugudan2 {
 		return result;
 	}
 	
-	public static void main(String[] args) {
-	// 이제 main 메소드에서 calculate 메소드를 사용한다.
-	
-		int[] result = calculate(2);
-				
+	public static void print(int[] result) {
 		for(int i = 0; i <result.length ;i++) {
-		System.out.println(result[i]); 
+			System.out.println(result[i]); 
 		}
+	}
+	
+	public static void main(String[] args) {
+	// 이제 main 메소드에서 미리 만들어 둔 2개의 메소드를 활용한다.
+		int[] result = calculate(2);
+		print(result);
+
+		int[] times3 = calculate(3);
+		print(times3);
+		
+		int[] times4 = calculate(4);
+		print(times4);
+		
 	}
 	
 }
