@@ -16,16 +16,11 @@ public class gugudan2 {
 	}
 	
 	public static void main(String[] args) {
-	// 이제 main 메소드에서 미리 만들어 둔 2개의 메소드를 활용한다.
-		int[] result = calculate(2);
-		print(result);
-
-		int[] times3 = calculate(3);
-		print(times3);
-		
-		int[] times4 = calculate(4);
-		print(times4);
-		
+		// 메소드, for문 으로 축소
+		for(int i = 2; i < 10; i ++) {
+			int[] result = calculate(i);
+			print(result);
+		}
 	}
 	
 }
