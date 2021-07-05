@@ -1,7 +1,5 @@
 public class gugudan2 {
-
-	public static int[] calculate(int times) {
-	// 메소드 사용해서 구구단 다시 구현
+	public static int[] calculate(int times) { //로직을 구성하는 메소드
 		int[] result = new int[9];
 		for(int i = 0; i <result.length ;i++) {
 		result[i] = times*(i+1);
@@ -9,18 +7,13 @@ public class gugudan2 {
 		return result;
 	}
 	
-	public static void print(int[] result) {
+	public static void print(int[] result) { //로직을 구성하는 메소드
 		for(int i = 0; i <result.length ;i++) {
 			System.out.println(result[i]); 
 		}
 	}
 	
-	public static void main(String[] args) {
-		// 메소드, for문 으로 축소
-		for(int i = 2; i < 10; i ++) {
-			int[] result = calculate(i);
-			print(result);
-		}
+	
+	
 	}
 	
-}
